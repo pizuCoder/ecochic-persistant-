@@ -554,6 +554,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  max-width: 400px;
 }
 .home-content04 {
   width: 100%;
@@ -924,7 +925,11 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  padding-left: 10px; /* Adjust the padding value as needed */
+  padding-right: 10px; /* Adjust the padding value as needed */
+  overflow-wrap: break-word; /* Break words if they exceed the container width */
 }
+
 .home-quote1 {
   color: rgb(34, 34, 35);
   width: 422px;
@@ -1631,6 +1636,9 @@
     padding-left: 0px;
     flex-direction: column;
   }
+  .home-quote1{
+    max-width: 100%;
+  }
   .home-steps {
     flex-direction: column;
   }
@@ -1746,8 +1754,10 @@
     padding-right: var(--dl-space-space-oneandhalfunits);
   }
   .home-quote-content1 {
-    padding-left: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-oneandhalfunits);
+    padding-left: 10px; /* Adjust the padding value as needed */
+    padding-right: 10px; /* Adjust the padding value as needed */
+    overflow-wrap: break-word; /* Break words if they exceed the container width */
+    max-width: 60%; /* Allow the element to expand to the full width of the viewport */
   }
   .home-content08 {
     gap: var(--dl-space-space-threeunits);
