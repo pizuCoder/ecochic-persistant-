@@ -478,17 +478,25 @@
 }
 .home-heading03 {
   color: rgb(34, 34, 35);
-  font-size: 40px;
+  font-size: 28px;
   font-style: normal;
   font-family: Lora;
   font-weight: 500;
-  line-height: 52px;
+  line-height: 36px;
+  /* text-align: center;  */
+  /* center the heading */
+  margin: 0 20px; /* add some horizontal margin */
 }
+
 .home-caption03 {
   color: rgb(34, 34, 35);
-  width: 524px;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 16px;
+  line-height: 24px;
+  
+  /* center the caption */
+  width: 100%; /* occupy full width of the container */
+  max-width: 400px; /* limit the width to prevent overflow */
+  margin: 10px 20px; /* add some margin */
 }
 .home-button07 {
   gap: var(--dl-space-space-twounits);
@@ -1623,6 +1631,9 @@
     padding-left: 0px;
     flex-direction: column;
   }
+  .home-steps {
+    flex-direction: column;
+  }
   .home-content {
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
@@ -1766,10 +1777,21 @@
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
   }
+  .home-caption03 {
+    max-width: 524px; /* revert back to original width */
+    margin: 10px 0; /* adjust margin as needed */
+    text-align: center; 
+  }
+  .home-heading03{
+    text-align: center;
+  }
 }
 @media(max-width: 479px) {
   .home-content {
     gap: var(--dl-space-space-threeunits);
+  }
+  .home-steps {
+    flex-direction: column;
   }
   .home-navbar-interactive {
     padding: var(--dl-space-space-unit);
