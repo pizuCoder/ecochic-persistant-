@@ -14,8 +14,8 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Helpa template</title>
-        <meta property="og:title" content="Helpa template" />
+        <title>EcoChic Persistant</title>
+        <meta property="og:title" content="ecochic persistant" />
       </Helmet>
       <Banner></Banner>
       <section className="home-hero">
